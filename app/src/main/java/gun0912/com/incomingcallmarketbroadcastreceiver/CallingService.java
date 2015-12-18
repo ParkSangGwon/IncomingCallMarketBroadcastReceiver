@@ -121,7 +121,7 @@ public class CallingService extends Service  {
         }
 
 
-        return START_STICKY;
+        return START_REDELIVER_INTENT;
     }
 
 
