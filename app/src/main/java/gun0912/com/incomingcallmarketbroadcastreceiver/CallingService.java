@@ -69,14 +69,14 @@ public class CallingService extends Service  {
         LayoutInflater layoutInflater = (LayoutInflater) getSystemService(LAYOUT_INFLATER_SERVICE);
         rootView = layoutInflater.inflate(R.layout.call_popup_top, null);
         ButterKnife.inject(this, rootView);
-        setDragable();
+        setDraggable();
 
 
     }
 
 
 
-    private void setDragable() {
+    private void setDraggable() {
 
         rootView.setOnTouchListener(new View.OnTouchListener() {
             private int initialX;
